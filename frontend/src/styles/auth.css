@@ -1,0 +1,87 @@
+/* Экран входа: жёлтый «бумажный» фон и карточка по центру. */
+
+.auth-screen {
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background:
+    radial-gradient(1100px 520px at 12% -12%, color-mix(in srgb, var(--yellow) 42%, transparent), transparent 60%),
+    radial-gradient(900px 480px at 96% 110%, color-mix(in srgb, var(--yellow) 26%, transparent), transparent 60%),
+    var(--sidebar-bg);
+}
+
+.auth-card {
+  width: min(400px, 100%);
+  padding: 30px 26px 24px;
+  border-radius: 20px;
+  background: var(--card-bg);
+  box-shadow: var(--shadow-md);
+  text-align: center;
+}
+
+.auth-logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.auth-logo-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  background: linear-gradient(160deg, #ffdc4a 0%, #ffcc00 45%, #f0a500 100%);
+  color: #3a2c00;
+  font-size: 26px;
+  font-weight: 700;
+  box-shadow: var(--shadow-sm);
+}
+
+.auth-title {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.auth-subtitle {
+  margin: 4px 0 20px;
+  font-size: 13px;
+  color: var(--text-2);
+}
+
+.auth-card .segmented {
+  display: flex;
+  width: 100%;
+  margin-bottom: 18px;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: left;
+}
+
+.auth-form .btn-primary {
+  margin-top: 4px;
+  min-height: 42px;
+}
+
+.auth-error {
+  padding: 9px 12px;
+  border-radius: 10px;
+  background: color-mix(in srgb, var(--red) 13%, transparent);
+  color: var(--red);
+  font-size: 12.5px;
+}
+
+.auth-hint {
+  margin: 18px 0 0;
+  font-size: 11.5px;
+  line-height: 1.5;
+  color: var(--text-3);
+}
